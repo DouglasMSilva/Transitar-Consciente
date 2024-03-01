@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="images/traffic-cone.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" class="style">
+    <title>Educação no Trânsito</title>
+
+
+</head>
+<body>
+
+    <div class="header">
+        <h1>Educação no Trânsito</h1>
+    </div>
+
+   <div class="container">
+        <h5>Saiba como funciona o Sinal de Trânsito</h5>
+
+        <form id="myForm">
+            <h6>Selecione uma das opções para entender um pouco mais sobre os conceitos de trânsito</h6>
+
+            <div class="traffic">
+                <h3>Você é:</h3>
+                <div class="traffic_radios">
+                    
+                    <input type="radio" id="pedProf" name="sign" value="pedestrian" onclick="atualiza()"><img id="ped" src="images/pedestrian_icon.png">Pedestre
+                    &nbsp;
+                    <input type="radio" id="carProf" name="sign" value="car" onclick="atualiza()"><img id="car" src="images/Car_Icon.png">Motorista
+    
+                    
+                </div>
+    
+                
+            </div>
+    
+            <h3>Escolha uma das cores do semáforo:</h3>
+    
+            <div class="box">
+                <div class="greenLight"></div>
+                <div class="yellowLight"></div>
+                <div class="redLight"></div>
+            </div>
+    
+            <div class="radios">
+                <input type="radio" id="verde" class="light" name="option" value="verde"> Verde
+                <input type="radio" id="amarelo" class="light" name="option" value="amarelo"> Amarelo
+                <input type="radio" id="vermelho" class="light" name="option" value="vermelho"> Vermelho
+            </div>
+    
+            <div id="campo" class="hidden">
+                <img id="go" src="images/Placa-Siga-PNG.png">
+                <img id="wait" src="images/attention-160818_640.webp">
+                <img id="stopp" src="images/placa-de-pare.png">  
+            </div>
+    
+    
+            <div id="peds" class="hidden">
+                <div id="ped_closing">
+                    <img id="p1" src="images/no-crossing-red-road-sign-or-traffic-sign-street-symbol-illustration-png.webp">
+                    <p id="tp1">Quando o semáforo estiver verde, os pedestres devem parar para que os veículos realizem a travessia.</p>
+                </div>
+    
+                <div id="ped_attention">
+                    <img id="pa" src="images/attention-160818_640.webp">
+                    <p id="tpa">Quando o semáforo estiver amarelo, é necessário esperar, pois logo ficará vermelho.</p>
+                </div>
+                
+                <div id="ped_opening">
+                    <img id="p2" src="images/pedestrians-sign.png">
+                    <p id="tp2">Quando o semáforo estiver vermelho, os pedestres poderão atravessar e os veículos quem devem parar.</p>
+                </div>
+            </div> 
+    
+             
+            <div id="cars" class="hidden">
+                    <div id="car_closing" class="hidden">
+                        <img id="c1" src="images/3placa-proibido-transito-de-veiculos-automotores-r-10-aluminio-acm-50x50cm-1.jpg">
+                        <p id="tc1">Quando o semáforo estiver vermelho, os veículos devem parar e os pedestres quem realizarão a travessia.</p>
+                    </div>
+    
+                    <div id="car_attention" class="hidden">
+                        <img id="ca" src="images/attention-160818_640.webp">
+                        <p id="tca">Quando o semáforo estiver amarelo, é necessário esperar, pois logo ficará vermelho.</p>
+                    </div>
+        
+                    <div id="car_opening" class="hidden"> 
+                        <img id="c2" src="images/500px-Mauritius_Road_Signs_-_Prohibitory_Sign_-_No_entry_for_power_driven_vehicle_except_two-wheeled_motorcycles_without_side-car.svg.png">
+                        <p id="tc2">Quando o semáforo estiver verde, os veículos podem atravessar e os pedestres deverão parar.</p>
+                    </div>
+            </div>
+        </form>
+
+        <div class="footer">
+            <p>&copy;Douglas Melo Silva</p>
+        </div>
+
+
+    </div>
+        
+       
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.8/pwacompat.min.js" integrity="sha384-uONtBTCBzHKF84F6XvyC8S0gL8HTkAPeCyBNvfLfsqHh+Kd6s/kaS4BdmNQ5ktp1" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

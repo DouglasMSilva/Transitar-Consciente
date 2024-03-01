@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: green;
+}
+
+
+h1 {
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+    height: 8vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.box {
+    width: 60px;
+    height: 200px;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+    
+}
+
+.greenLight {
+    width: 40px;
+    height:40px;
+    border-radius: 20px;
+    background-color: green;
+    
+
+}
+
+.yellowLight {
+    width: 40px;
+    height:40px;
+    border-radius: 20px;
+    background-color: yellow;
+
+}
+
+.redLight {
+    width: 40px;
+    height:40px;
+    border-radius: 20px;
+    background-color: red;
+}
+
+.radios {
+    margin-top: 10px;
+    color: white;
+}
+
+button {
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px #333;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+
+.traffic_radios {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+               
+}
+
+.traffic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white;
+    width: 100vw; */
+    /* margin-bottom: 20px; */
+}
+
+#car {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
+
+#ped {
+    width: 50px;
+    height: 40px;
+    
+    padding: 5px;
+}
+
+
+#campo img {
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+}
+
+#go, #wait, #stop {
+    display: none;
+
+}
+
+#ped_closing img, #ped_opening img , #ped_attention img{
+    width: 70px;
+    height: 70px;
+}
+
+#car_closing img, #car_opening img, #car_attention img {
+    width: 70px;
+    height: 70px;
+}
+
+#ped_closing, #ped_opening, #ped_attention {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100vw;
+    height: 200px;
+
+}
+
+h5 {
+    margin-bottom: 30px;
+}
+
+#car_closing, #car_opening, #car_attention {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100vw;
+    height: 200px;
+}
+
+h3, h5 {
+    color: white;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+h6 {
+    background-color: white;
+    width: 100vw;
+    text-align: center;
+}
+
+#campo {
+    margin-bottom: 10px;
+}
+
+#myForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+@media(max-width: 768px) {
+    h5 {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    h3, h6 {
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    #ped_closing img, #ped_opening img , #ped_attention img{
+        margin-left: 10px;
+    }
+
+    #car_closing img, #car_opening img, #car_attention img {
+        margin-left: 10px;
+    }
+
+}
